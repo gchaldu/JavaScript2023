@@ -1,0 +1,46 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.task
+{
+    width: 70%;
+    outline: 1px solid black;
+}
+
+.modal
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /*enable scroll if needed*/
+    background-color: rgb(0, 0, 0); /*fallback color*/
+    background-color: rgba(0, 0, 0, .4); /*black w/ opacity*/
+}
+
+.modal-content
+{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#close-modal
+{
+    font-size: 1.5em;
+}
+
+#close-modal:hover
+{
+    cursor: pointer;
+}
