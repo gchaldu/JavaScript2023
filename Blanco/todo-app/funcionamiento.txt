@@ -1,0 +1,13 @@
+El usuario accede a la pagina, cuando la pagina se carga (evento load) se hace
+un fetch al archivo tasks.json, si no hay ninguno guardado muestra un mensaje
+que indica la ausencia de tareas. Si hay tareas guardadas las carga a un arreglo
+de objetos tipo Task y los renderiza en un div.
+
+El usuario ya en la pagina y las tareas ya cargadas, si clickea en el boton New Task
+se lanza un evento que muestra un formulario tipo modal que permite guardar una crear una
+nueva tarea.
+
+El usuario ya clickeó en el boton New Task, apareció el formulario modal, completó los inputs, 
+y clickeó en el botón Submit. Esto lanza el evento submit con una funcion que procesa ese evento
+donde se evita que la pagina se recargue, se buscan los valores de cada input y se crea un nuevo
+objeto Task con dichos valores.

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Todo-App</title>
+</head>
+<body>
+    <h1>Todo-App</h1>
+
+    <div class="task-list">
+        <h2>Task List</h2>
+        <p>Task Count: 1</p>
+
+        <div class="task">
+            <p id="title">Do Homework</p>
+
+            <p id="date">30/08/2023 17:14h</p>
+
+            <p id="completed">False</p>
+
+            <p id="comment">This is a remainder to do my math homework in the night.</p>
+        </div>
+
+        <div class="modal" id="modal-add-task">
+            <div class="modal-content">
+                <span id="close-modal">&times;</span>
+                <h2>New Task</h2>
+
+                <form id="new-task-form">
+                    <input type="text" id="task-title-input" placeholder="Title"><br>
+    
+                    <input type="datetime-local" id="task-date-input"><br>
+                    
+                    <textarea name="comment" id="task-comment-textarea" cols="30" rows="10"
+                        placeholder="Comment"></textarea><br>
+
+                    <button>Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- deberia abrir una ventana modal para agregar la nueva tarea -->
+        <button id = "add-task">New Task</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
