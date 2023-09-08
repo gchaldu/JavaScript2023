@@ -1,0 +1,35 @@
+body{
+    margin-top: 0px;
+}
+
+.encabezado{
+    position: fixed;
+    background-color: chocolate;
+    top: 0px;
+    width: 100%;
+}
+
+.contenedor{
+    width: 800px;
+    height: 300px;
+    right: 20px;
+    left: 200px;
+    background-color: coral;
+    position: relative;
+    top: 50px;
+}
+
+.elemento{
+    background-color: goldenrod;
+    width: 40%;
+    height: 40%;
+    right: 400px;
+    position: absolute;
+}
+
+.cuadrado{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(12, 140, 245, 0.534);
+    position: static;
+}
