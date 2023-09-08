@@ -1,0 +1,45 @@
+@import url(../styles/globales.css);
+
+/*Categorias dfe productos*/
+.contenedor-categoria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: rgb(224, 221, 221);*/
+}
+
+h2{
+  font-size: 25px;
+}
+
+.lista-productos{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.producto{
+  display: flex;
+  flex-direction: column;
+}
+
+.producto img{
+  height: 20rem;
+  width: 18rem;
+}
+
+.producto a{
+  text-decoration: none;
+  color: rgb(19, 151, 228);
+  text-align: center;
+  padding: 1rem;
+  font-size: 15px;
+}
+
+.producto a:hover{
+  background-color: rgb(19, 151, 228);
+  color: white;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  transition: all .7s ease;
+}

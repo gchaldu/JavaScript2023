@@ -1,0 +1,44 @@
+@import url(../styles/globales.css);
+
+.span-title {
+  color: rgb(19, 151, 228);
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+}
+
+hr {
+  border: .1rem solid grey;
+}
+
+/*Navegador*/
+.contenedor-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px;
+  padding: 5px;
+}
+
+.navegador {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navegador a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  background-image: url("../Img/hero/3.jpg");
+  height: 25rem;
+  background-size: cover;
+  /* or "contain" depending on what you want */
+  background-position: center;
+  background-repeat: no-repeat;
+}
