@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*Ejecicio 1*/
+body{
+    margin: 0px;
+}
+.cuadrado-azul{
+    width: 200px;
+    height: 200px;
+    border: solid 2px green;
+    background-color: cornflowerblue;
+}
+
+#principal {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+hr{
+    border: 0px;
+    margin-bottom: 120px;
+}
+#secundario{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+/*Ejercicio 2*/
+#encabezado{
+    margin-top: 0px;
+    position: fixed;
+    background-color: coral;
+    width: 100%;
+    top: 0px;
+}
+
+#cuadrado-largo{
+    width: 50px;
+    height: 2000px;
+    background-color: cornflowerblue;
+}
+
+/*Ejercicio 3*/
+.cuadrado-grande{
+    background-color: cornflowerblue;
+    border: solid 2px green;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+.cuadrado-verde{
+    background-color: green;
+    border: solid 2px yellow;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 200px;
+    z-index: 2;
+}
+.cuadrado-naranja{
+    background-color: orange;
+    border: solid 2px white;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 350px;
+    z-index: 3;
+}
+.cuadrado-rojo{
+    background-color: red;
+    border: solid 2px black;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 450px;
+    z-index: 4;
+}
+
+/*Ejercicio 4*/
+
+.cuadro-texto{
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+    position: absolute;
+    background-color: white;
+}
