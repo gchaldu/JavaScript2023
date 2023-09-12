@@ -3,6 +3,7 @@
 //! ----------Arreglos con Tipos de Datos Primitivos:----------
 //? 1. Suma de Elementos: Dado un arreglo de números, calcula la suma de todos los elementos.
 const unArr1 = [4,7,3,6,9,2];
+console.log('---------01-----------------------------------------------------');
 console.log('UN ARRAY DE NUM: ' + unArr1);
 function sumarArr1(unArr) {
     let response = 0;
@@ -26,10 +27,12 @@ function promedio2(unArr) {
     return promedio
 };
 let res2 = promedio2(unArr1);
+console.log('---------02-----------------------------------------------------');
 console.log(res2);
 //? 3. Máximo y Mínimo: Encuentra el número máximo y el número mínimo en un arreglo de números.
 let rta3Max = Math.max(...unArr1);
 let rta3Min = Math.min(...unArr1);
+console.log('---------03-----------------------------------------------------');
 console.log('El Max: ' + rta3Max + '\nEl Min: ' + rta3Min);
 //? 4. Buscar Valor: Escribe una función que busque un valor específico en un arreglo y devuelva su índice, si existe.
 function buscarValor4(unArr, unValor) {
@@ -46,6 +49,7 @@ function buscarValor4(unArr, unValor) {
 };
 let esta4 = buscarValor4(unArr1, 3);
 let noEsta4 = buscarValor4(unArr1, 8);
+console.log('---------04-----------------------------------------------------');
 console.log(esta4 + '\n' + noEsta4);
 //? 5. Filtrar Pares e Impares: Separa un arreglo de números en dos arreglos diferentes, uno con números pares y otro con números impares.
 const unArr5Par = [];
@@ -60,6 +64,7 @@ unArr1.forEach(item => {
         unArr5Impar.push(item);
     }
 });
+console.log('---------05-----------------------------------------------------');
 console.log('Pares: ' + unArr5Par + ' \nImpares: ' + unArr5Impar);
 //? 6. Eliminar Duplicados: Crea una función que elimine los elementos duplicados de un arreglo.
 const unArr6 = [3,5,7,5,2,8,9,5,6,4,3,6,8,2,6];
@@ -75,16 +80,19 @@ function eliminaDup6(unArr) {
     return response;
 };
 const unNoDup6 = eliminaDup6(unArr6);
+console.log('---------06-----------------------------------------------------');
 console.log('Array Original: ' + unArr6 + '\nUn Arr sin Dupliucados: ' + unNoDup6);
 //? 7. Ordenar Arreglo: Ordena un arreglo de números de forma ascendente.
 const unArr7 = [...unNoDup6];
 unArr7.sort((a, b) => {
     return a - b;
 });
+console.log('---------07-----------------------------------------------------');
 console.log('Un Arr: ' + unNoDup6 + '\nUn Arr Ordenado: ' + unArr7);
 //? 8. Eliminar Valor: Elimina todas las ocurrencias de un valor específico de un arreglo.
 const unArr8 = [6,5,4,3,5,6,7,8,6,5,6,7,4,5,6,3,5,6,6];
 const unArr8Filt = unArr8.filter(item => item != 6);
+console.log('---------08-----------------------------------------------------');
 console.log('Un Arr: ' + unArr8 + '\nUn Arr sin 6: ' + unArr8Filt);
 //? 9. Combinar Arreglos: Combina dos arreglos en uno solo, asegurándote de que no haya duplicados.
 const unArr9sub1 = [1,2,3,4,5,6,7,2,3,4,5];
@@ -107,6 +115,7 @@ function combinaArrSinDup9(unArr, dosArr) {
     return response9
 };
 const unArr9 = combinaArrSinDup9(unArr9sub1, unArr9sub2);
+console.log('---------09-----------------------------------------------------');
 console.log('Arr1: ' + unArr9sub1 + '\nArr2: ' + unArr9sub2 + '\nArr1+2 sin Dup: ' + unArr9);
 
 //! ----------Arreglos con Tipos de Datos Compuestos:----------
@@ -133,6 +142,7 @@ lista10.agregarCompra(compra10Sub01);
 lista10.agregarCompra(compra10Sub02);
 lista10.agregarCompra(compra10Sub03);
 let compras10 = JSON.stringify(lista10.lista);
+console.log('---------10-----------------------------------------------------');
 console.log('Lista de Compras: \n' + compras10);
 //? 11. Agenda de Contactos: Crea una agenda de contactos con nombres, números de teléfono y correos electrónicos.
 function Contacto11(nombre) {
@@ -171,6 +181,8 @@ const unaAgenda11 = new AgendaContactos11();
 unaAgenda11.agregarContacto(unContacto11Sub1);
 unaAgenda11.agregarContacto(unContacto11Sub2);
 unaAgenda11.agregarContacto(unContacto11Sub3);
+console.log('---------11-----------------------------------------------------');
+console.log(unaAgenda11);
 //? 12. Búsqueda de Palabras: Dado un párrafo y una palabra, cuenta cuántas veces aparece la palabra en el párrafo.
 let parrafo12 = 'Siempre trabaja en ramas separadas para cada tarea y evita hacer cambios directamente en la rama principal (master/main). \n- Coordina con otros colaboradores para evitar duplicación de esfuerzos.\n- Las decisiones importantes sobre el repositorio serán tomadas a través de discusiones en las Pull Requests. \n- No dudes en utilizar la sección de problemas (Issues) para discutir problemas específicos o hacer preguntas.';
 function cuentaPalabra12(unParrafo, unaPalabra) {
@@ -184,6 +196,7 @@ function cuentaPalabra12(unParrafo, unaPalabra) {
     return response;
 };
 let cant12 = cuentaPalabra12(parrafo12, 'en');
+console.log('---------12-----------------------------------------------------');
 console.log('Parrafo: ' + parrafo12);
 console.log('La Palabra "en", se encuentra ' + cant12 + ' veces en el parrafo anterior');
 //? 13. Clasificación de Objetos: Ordena un arreglo de objetos por una propiedad específica.
@@ -203,6 +216,7 @@ unArrObj13nom.sort((a, b) => {
     }
 });
 unArrObj13ed.sort((a,b) => a.edad - b.edad);
+console.log('---------13-----------------------------------------------------');
 console.log(unArrObj13nom);
 console.log(unArrObj13ed);
 //? 14. Registro de Ventas: Crea un registro de ventas con información sobre productos, cantidades y precios.
@@ -250,7 +264,8 @@ unRegistroVta14.agregarProducto(unProd14Sub1, 3);
 unRegistroVta14.agregarProducto(unProd14Sub2, 7);
 unRegistroVta14.agregarProducto(unProd14Sub3, 8);
 unRegistroVta14.agregarProducto(unProd14Sub4, 9);
-unRegistroVta14.agregarProducto(unProd14Sub1, 13);
+unRegistroVta14.agregarProducto(unProd14Sub1, 13); //* Mas bananas 16 tot
+console.log('---------14-----------------------------------------------------');
 console.log(unRegistroVta14);
 //? 15. Carrito de Compras: Simula un carrito de compras que permite agregar, eliminar y calcular el total.
 class Carrito15{
@@ -268,7 +283,7 @@ class Carrito15{
         if(elimObj != -1){
             this.lista.splice(elimObj, 1);
         }else{
-            console.log('El producto ue desea eliminar no esta en el carro');
+            console.log('El producto que desea eliminar (' + prodNombre + ') no esta en el carro');
         }
     }
     calcularTotal(){
@@ -284,8 +299,9 @@ unCarrito15.agregarCompra('asado', 90);
 unCarrito15.agregarCompra('costillar', 100);
 unCarrito15.agregarCompra('vacio', 250);
 unCarrito15.agregarCompra('tapa', 70);
+console.log('---------15-----------------------------------------------------');
 console.log(unCarrito15);
-unCarrito15.eliminarCompra('compra');
+unCarrito15.eliminarCompra('pescado');
 unCarrito15.eliminarCompra('costillar');
 console.log(unCarrito15);
 console.log(unCarrito15.calcularTotal());
@@ -314,6 +330,7 @@ class Gestor16{
     }
 };
 let gestorTareas16 = new Gestor16();
+console.log('---------16-----------------------------------------------------');
 gestorTareas16.agregarTarea('caminata');
 gestorTareas16.agregarTarea('trote');
 gestorTareas16.agregarTarea('fondo');
@@ -323,8 +340,7 @@ gestorTareas16.completarTarea('12k');
 console.log(gestorTareas16);
 
 
-
-
+console.log('---------CLASS-STRUCTURE----------------------------------------');
 //!-----------------------------------------------------------------------------------------------------------------------
 class Rectangulo99{                                             //!-------------------------------------------------------
     constructor(alto, ancho){                                   //!-------------------------------------------------------
@@ -342,3 +358,5 @@ const unRect99 = new Rectangulo99(10,20);                       //!-------------
 console.log(unRect99.calcularArea());                           //!-------------------------------------------------------
 console.log(unRect99.altoRec);                                  //!-------------------------------------------------------
 //!-----------------------------------------------------------------------------------------------------------------------
+
+
