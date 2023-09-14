@@ -11,6 +11,7 @@
 
 hr {
   border: .1rem solid grey;
+  width: 100%;
 }
 
 /*Navegador*/
@@ -32,6 +33,13 @@ hr {
   font-size: 18px;
   text-decoration: none;
   color: black;
+}
+
+.navegador a:hover{
+  background-color: rgb(19, 151, 228);
+  color: white;
+  border-radius: .5rem;
+  transition: all .7s ease;
 }
 
 .hero {

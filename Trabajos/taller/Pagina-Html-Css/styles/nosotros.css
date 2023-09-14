@@ -1,0 +1,46 @@
+@import url(../styles/globales.css);
+
+
+.nosotros{
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 25px;
+    justify-content: center;
+}
+
+.nosotros-caja{
+    width: 50rem;
+    height: 30rem;
+}
+
+#nosotros-imagen{
+    background-image: url(../Img/hero/2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#caja-nosotros-info{
+    background-color: rgb(19, 151, 228);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#nosotros-titulo{
+    color:white;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+}
+
+#nosotros-detalles{
+    color: white;
+    position: absolute;
+    left: 40px;
+    top: 120px;
+    right: 20px;
+}

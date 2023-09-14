@@ -18,7 +18,7 @@ mostrarMensaje("Hola soy un mensaje xd", (err, msj) => { //**Aca especificamos l
     }
 }); /**Como se ve, hacemos el (cosita1, cosita2) => {} es una arrow function */
 
-/**2-Crea una función llamada `sumarAsync` que acepte dos números y una función de callback. 
+/**2- Crea una función llamada `sumarAsync` que acepte dos números y una función de callback. 
 Esta función debe sumar los números y luego llamar a la función de callback con el resultado.
  */
 
@@ -55,7 +55,7 @@ function retrasarEjecucion(callback, milisegundos){
     console.log(`Ese es un mensaje que se realizo de spues de una pausa de ${ms} milisegundos`);
 }, 5000);*/
 
-/** Crea una función llamada `obtenerDatosUsuario` que simule una solicitud HTTP para obtener 
+/**4- Crea una función llamada `obtenerDatosUsuario` que simule una solicitud HTTP para obtener 
 datos de usuario. Esta función debe aceptar un ID de usuario y una función de callback. Luego, 
 dentro de la función, debes simular una solicitud a una API y, cuando se complete, llamar a la 
 función de callback con los datos del usuario. */
@@ -83,7 +83,7 @@ const usuarios = [
 ]
 
 
-const obtenerDatosUsuario = (id, callback) => {
+const obtenerDatosUsuarioWithCallback = (id, callback) => {
     const usuario = usuarios.find((element) => id === element.id);
 
     (usuario)
@@ -91,11 +91,34 @@ const obtenerDatosUsuario = (id, callback) => {
         : callback(`No se pudo encontrar el usuario con la id: ${id}`)
 }
 
-obtenerDatosUsuario(3, (err, usuario) => {
+/*obtenerDatosUsuarioWithCallback(3, (err, usuario) => {
     if(err !== null){
         console.log("Error 404!");
         console.log(err);
     }else{
         console.log(`El usuario con la id ${usuario.id} es ${usuario.nombre}`);
     }
-});
+});*/
+
+/**5- Modifica el ejercicio 4 para que en lugar de utilizar callbacks, utilice promesas para manejar la 
+solicitud de datos de usuario. */
+
+const obtenerDatosUsuarioWithPromises = (id) => {
+
+    let prom = new Promise((resolve, reject) => {
+
+        const usuario = usuarios.find((element) => id === element.id);
+
+        if(usuario){
+            resolve(usuario);
+        }else{
+            reject(`Error 404: No se encontro el usuario con la id ${id}`);
+        }
+    });
+
+    return prom;
+}
+
+obtenerDatosUsuarioWithPromises(5)
+    .then(result => console.log(`El usuario con la id ${result.id} es ${result.nombre}`))
+    .catch(reject => console.log(reject))

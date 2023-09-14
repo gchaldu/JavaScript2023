@@ -26,6 +26,7 @@ h2{
 .producto img{
   height: 20rem;
   width: 18rem;
+  border: solid 1px black;
 }
 
 .producto a{
