@@ -9,10 +9,11 @@ html {
 }
 
 /*Ejecicio 1*/
-body{
+body {
     margin: 0px;
 }
-.cuadrado-azul{
+
+.cuadrado-azul {
     width: 200px;
     height: 200px;
     border: solid 2px green;
@@ -25,17 +26,19 @@ body{
     left: 100px;
 }
 
-hr{
+hr {
     border: 0px;
     margin-bottom: 120px;
 }
-#secundario{
+
+#secundario {
     position: absolute;
     left: 40px;
     top: 60px;
 }
+
 /*Ejercicio 2*/
-#encabezado{
+#encabezado {
     margin-top: 0px;
     position: fixed;
     background-color: coral;
@@ -43,14 +46,14 @@ hr{
     top: 0px;
 }
 
-#cuadrado-largo{
+#cuadrado-largo {
     width: 50px;
     height: 2000px;
     background-color: cornflowerblue;
 }
 
 /*Ejercicio 3*/
-.cuadrado-grande{
+.cuadrado-grande {
     background-color: cornflowerblue;
     border: solid 2px green;
     width: 200px;
@@ -58,7 +61,8 @@ hr{
     position: relative;
     z-index: 1;
 }
-.cuadrado-verde{
+
+.cuadrado-verde {
     background-color: green;
     border: solid 2px yellow;
     width: 150px;
@@ -67,7 +71,8 @@ hr{
     bottom: 200px;
     z-index: 2;
 }
-.cuadrado-naranja{
+
+.cuadrado-naranja {
     background-color: orange;
     border: solid 2px white;
     width: 100px;
@@ -76,7 +81,8 @@ hr{
     bottom: 350px;
     z-index: 3;
 }
-.cuadrado-rojo{
+
+.cuadrado-rojo {
     background-color: red;
     border: solid 2px black;
     width: 50px;
@@ -88,10 +94,29 @@ hr{
 
 /*Ejercicio 4*/
 
-.cuadro-texto{
-    height: 100px;
+#lista-paginas {
+    text-decoration: none;
+}
+
+.lista-item {
+    font-size: larger;
+}
+
+.lista-item a {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.escondido {
+    display: none;
+    border: solid 2px black;
     width: 150px;
-    border: 1px solid black;
     position: absolute;
     background-color: white;
+}
+
+.lista-item a:hover + .escondido{
+    display: block;
+    z-index: 2;
 }
