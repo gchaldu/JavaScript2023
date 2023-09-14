@@ -19,4 +19,5 @@ arregloEstudiantes.push(Ramiro);
 arregloEstudiantes.push(Jose);
 arregloEstudiantes.push(Mauro);
 
+console.log("Ejercicio 18- ");
 console.log(arregloEstudiantes);

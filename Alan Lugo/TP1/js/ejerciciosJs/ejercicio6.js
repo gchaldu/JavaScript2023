@@ -11,4 +11,5 @@ function sumaElementosArreglo() {
     }
     return suma;
 } 
+console.log("Ejercicio 6- ");
 console.log("La suma de los elementos del arreglo es: "+ suma);

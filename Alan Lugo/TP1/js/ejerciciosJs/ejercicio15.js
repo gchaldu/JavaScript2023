@@ -9,4 +9,5 @@ function duplicarArray(arregloNum){
     return arregloDuplicado;
 }
 
+console.log("Ejercicio 15- ");
 console.log("Arreglo de numeros duplicados: "+duplicarArray(arregloNumeros));

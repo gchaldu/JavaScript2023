@@ -11,4 +11,5 @@ function esPar(numero) {
     return verdadero;
 }
 
+console.log("Ejercicio 5- ");
 console.log(esPar(5));

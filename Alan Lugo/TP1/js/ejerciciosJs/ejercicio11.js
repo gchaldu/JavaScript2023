@@ -3,5 +3,5 @@
 const unaFrutaMas = "naranja";
 
 frutas.push(unaFrutaMas);
-
+console.log("Ejercicio 11- ");
 console.log("La cantidad de frutas es de: "+frutas.length+" y el ultimo elemento agregado es: "+frutas[frutas.length-1]);

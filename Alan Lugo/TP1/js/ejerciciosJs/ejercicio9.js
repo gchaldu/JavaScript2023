@@ -11,5 +11,6 @@ function Pelicula(titulo, director, anio) {
 
 const pelicula = new Pelicula("Fast and Furious", "Vin Disel", 2020); 
 
+console.log("Ejercicio 9- ");
 console.log(pelicula);
 console.log("La pelicula es: " + pelicula.titulo + ", su director es: "+pelicula.director+", y salio el año"+pelicula.anio);

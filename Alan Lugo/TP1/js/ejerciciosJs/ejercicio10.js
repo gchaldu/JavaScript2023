@@ -3,4 +3,6 @@
 
 const frutas = ["tomate", "manzana", "banana"];
 
+console.log("Ejercicio 10- ");
+console.log(frutas);
 console.log("El tercer elemento de el arreglo de frutas es: "+frutas[2]);

@@ -17,6 +17,7 @@ function crearPersona(nombre, edad) {
 
 var alan = new Persona("Alan", 24);
 
+console.log("Ejercicio 13- ");
 console.log(crearPersona("ivan", 13));
 
 console.log("El nombre de la persona es: "+alan.nombre);

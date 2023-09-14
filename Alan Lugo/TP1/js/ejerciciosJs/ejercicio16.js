@@ -7,5 +7,5 @@ function invertirCadena(arregloNum){
     
     return cadenaInvertida;
 }
-
+console.log("Ejercicio 16- ");
 console.log(invertirCadena(arregloNumeros));

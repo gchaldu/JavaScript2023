@@ -15,4 +15,5 @@ function filtrarPorLongitud(arregloNum, num){
 const result = words.filter((word) => word.length > 6);
 
 console.log(result); */
+console.log("Ejercicio 17- ");
 console.log(filtrarPorLongitud(arrayNombres,4));

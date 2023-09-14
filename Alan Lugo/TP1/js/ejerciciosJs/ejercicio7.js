@@ -7,6 +7,7 @@ const persona = {
     profesion: "Abogado"
 }
 
+console.log("Ejercicio 7- ");
 console.log("La persona es: "+ persona.nombre);
 
 

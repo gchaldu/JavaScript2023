@@ -17,4 +17,5 @@ const arregloInfo = obtenerInfo(alan);
 
 arregloInfo.push(obtenerInfo(santi));
 
+console.log("Ejercicio 14- ");
 console.log(arregloInfo);
