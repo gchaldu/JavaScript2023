@@ -3,7 +3,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //*No se si es asi xD*/
+    font-size: 62.5%; //*1rem = 10px*/
 }
 
 *,

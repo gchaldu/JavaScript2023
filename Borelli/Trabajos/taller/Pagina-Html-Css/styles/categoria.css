@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: 5px;
   /*background-color: rgb(224, 221, 221);*/
 }
 

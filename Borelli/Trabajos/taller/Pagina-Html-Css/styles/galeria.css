@@ -1,0 +1,40 @@
+@import url(../styles/globales.css);
+
+.gallery_contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 8rem;
+}
+
+#gallery_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .5rem;
+    width: 50%;
+}
+
+.img_contenedor{
+    height: 20rem;
+    background-color: brown;
+}
+
+.img_contenedor:first-child{
+    grid-column: 1/3;
+}
+
+.img_contenedor:nth-child(4){
+    grid-column: 2/4;
+}
+
+.img_contenedor:nth-child(5){
+    grid-column: 1/3;
+}
+
+.img_contenedor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

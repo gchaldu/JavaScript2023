@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 25px;
+    top: 30px;
     justify-content: center;
 }
 
@@ -43,4 +43,33 @@
     left: 40px;
     top: 120px;
     right: 20px;
+}
+
+.nosotros_contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 8rem;
+}
+
+.nosotros_details{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 30rem;
+}
+
+.nosotros_details img{
+    height: 100%;
+    object-fit: cover;
+    width: 50%;
+}
+
+.nosotros_details p{
+    color: black;
+    font-size: 1.2rem;
+    padding: 1.5rem;
 }
