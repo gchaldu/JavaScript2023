@@ -1,0 +1,57 @@
+@import url(../styles/globales.css);
+
+#blog_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#grid_blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    width: 55%;
+    gap: 1rem;
+}
+
+.grid_items{
+    background-color: white;
+}
+
+.grid_items img{
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.autor_fuente{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.boton_blog{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(19, 151, 228);
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 50%;
+}
+
+.grid_item_lista{
+    background-color: white;
+}
+
+.grid_item_lista li{
+    margin: 1rem 0;
+}
+.grid_item_lista a{
+    color: black;
+    text-decoration: none;
+}
