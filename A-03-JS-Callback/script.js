@@ -1,5 +1,5 @@
 //! --------------------Callback-Functions---------------------------------------------------------------------------------------
-console.log('---------CALLBACK-fUNCTIONS--------------------------------------');
+console.log('---------CALLBACK-FUNCTIONS--------------------------------------');
 const empleados = [{id: 1, name: 'Maria'},{id: 2, name: 'Ana'},{id: 3, name: 'Roberto'},{id: 4, name: 'Carlos'}];
 const salarios = [{id: 1, salario: 2000},{id: 2, salario: 2500},{id: 3, salario: 3000},{id: 4, salario: 4000}];
 const getEmpleadoById = (id, callback) => {
@@ -112,7 +112,7 @@ function retrasarEjecucion(timeMs, callback) {
     setTimeout(callback, timeMs);
     console.log('La funcion se ejecutara despues de ' + timeMs + ' milisegundos');
 };
-retrasarEjecucion(5000, () => {
+retrasarEjecucion(3000, () => {
     console.log('---------|03|-----------------------------------------------');
     console.log('Funcion con retraso del punto 03');
 });
@@ -123,10 +123,46 @@ retrasarEjecucion(5000, () => {
 //?una solicitud a una API y, cuando se complete, llamar a la función de callback con los datos del usuario.
 console.log('---------04-----------------------------------------------------');
 function obtenerDatosUsuario(unaId, callback) {
-
+    setTimeout(() => {
+        let unUser4 = {id: unaId, nombre: 'Nombre 4', edad: 44};
+        callback(null,unUser4);          //* Llamar func de callback con los datos del user
+        //callback('unError4',unUser);  //* Llamar func de callback pero con ERR
+    }, 5000);
+    console.log('Los datos se recibiran en 5 segundos');
 };
+let unaId4 = 1234;
+obtenerDatosUsuario(unaId4, (err, data) => {
+    if(err){
+        console.log('ERROR!!!');
+        return console.log(err);
+    }
+    console.log('---------|04|-----------------------------------------------');
+    console.log('Funcion con retraso del punto 04');
+    console.log('Datos user4: \nID:' + data.id + '\nNombre: ' + data.nombre + '\nEdad: ' + data.edad);
+});
 
 //!----------------Ejercicio 5: Promesas y Callbacks-------------------------------
 //?Modifica el ejercicio 4 para que en lugar de utilizar callbacks, 
 //?utilice promesas para manejar la solicitud de datos de usuario.
 console.log('---------05-----------------------------------------------------');
+function obtenerDatosUsuarioPromise(unaId) {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            let unUser5 = {id: unaId, nombre: 'Nombre 5', edad: 55};
+            resolve(unUser5);
+        }, 7000)
+    })
+};
+let unaId5 = 12345;
+console.log('Los datos se recibiran en 7 segundos');
+obtenerDatosUsuarioPromise(unaId5)
+    .then(data => {
+        console.log('---------|05|-----------------------------------------------');
+        console.log('Funcion con retraso del punto 05');
+        console.log('Datos user5: \nID:' + data.id + '\nNombre: ' + data.nombre + '\nEdad: ' + data.edad);
+    })
+    .catch(err => {
+        console.log('ERROR!!!');
+        console.log(err);
+    });
+
