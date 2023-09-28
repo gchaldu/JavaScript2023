@@ -1,0 +1,64 @@
+@import url(../css/globales.css);
+/*npm install -g json-server   
+json-server "direccion del jsnon, -p 4000"*/
+/*acordate d eponer type="module" en el script de html, le aviso que voy a importar y exportar archivos js*/
+
+.nav_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.nav_container a{
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_container hr{
+    border: .1rem solid lightgray;
+    width: 100%;
+}
+
+.nav_container div{
+    align-items: end;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.lista-clientes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabla-clientes{
+    width: 50%;
+    border: .1rem solid grey;
+    border-collapse: collapse;
+}
+
+.tabla-clientes th{
+    border: .1rem solid black;
+    color: white;
+    background-color: rgb(50, 49, 49);
+    padding: .5rem;
+    text-align: left;
+}
+
+.tabla-clientes td{
+    border: .1rem solid black;
+    padding: .5rem;
+}
+
+.tabla-clientes a{
+    text-decoration: none;
+    color: black;
+}
+
+.lista-clientes h2{
+    font-size: 3rem;
+}
