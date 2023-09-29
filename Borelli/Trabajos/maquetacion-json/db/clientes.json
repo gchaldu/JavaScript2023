@@ -1,0 +1,51 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nombre": "Juan Ignacio",
+            "apellido": "Borelli",
+            "dni": "39107512",
+            "f_inicio": ""
+        },
+
+        {
+            "id": 2,
+            "nombre": "Matias Sebatían",
+            "apellido": "Borelli",
+            "dni": "39100000",
+            "f_inicio": ""
+        },
+
+        {
+            "id": 69,
+            "nombre": "Lorena Maria",
+            "apellido": "Mendez",
+            "dni": "22444999",
+            "f_inicio": ""
+        },
+
+        {
+            "id": 12,
+            "nombre": " Mariano",
+            "apellido": "Borelli",
+            "dni": "88997654",
+            "f_inicio": ""
+        },
+
+        {
+            "id": 41,
+            "nombre": "Fernanda",
+            "apellido": "Mendez",
+            "dni": "22897546",
+            "f_inicio": ""
+        },
+
+        {
+            "id": 92,
+            "nombre": "Pepito",
+            "apellido": "Poto",
+            "dni": "39887334",
+            "f_inicio": ""
+        }
+    ]
+}
