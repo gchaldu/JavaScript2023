@@ -18,32 +18,33 @@ const ejercicio4 = async (url) => {
         }, 5000)
     });
 }
-
+/**
 ejercicio4(url)
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
-
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
+ */
 //**Ejercicio 5: Crea una función que acepte un arreglo de números y devuelva una Promise que se
 //resuelva con la suma de los números después de 1 segundo. (Usar reduce) */
 
-const ejercicio5 = (arr) => {
+const ejercicio5 = async (arr) => {
     return new Promise((resolve, reject) => {
         let sum = 0;
         setTimeout(() => {
-            arr.forEach(element => {
-                sum += element;
-            });
+            sum = arr.reduce((accumulator, currentValue) => 
+                accumulator + currentValue, 0
+            )
 
-            if(sum != 0){
+            if (sum != 0) {
                 resolve(sum);
-            }else{
+            } else {
                 reject("Error 404!: Error grave al sumar los datos...");
             }
         }, 1000);
     });
 }
 
+
 const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 ejercicio5(numberArray)
-                    .then(resultado => console.log(`El resultado de la suma de todos los numeros del array es: ${resultado}`))
-                    .catch(err => console.log(err));
+    .then(resultado => console.log(`El resultado de la suma de todos los numeros del array es: ${resultado}`))
+    .catch(err => console.log(err));
