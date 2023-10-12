@@ -26,6 +26,7 @@ json-server "direccion del jsnon, -p 4000"*/
 .tabla-clientes td{
     border: .1rem solid black;
     padding: .5rem;
+    font-size: 1.5rem;
 }
 
 .tabla-clientes a{

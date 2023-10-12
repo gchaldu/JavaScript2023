@@ -1,44 +1,35 @@
-const url = 'http://localhost:4000/clientes';
+const clienteUrl= "http://localhost:4000/clientes";
+const proveedoresUrl= "http://localhost:4000/proveedores";
 
-export const getClientes = async () => {
-    try {
-        const resultados = await fetch(url, { method: 'GET' });
+export async function getClientes(){
+    try{
+        const resultado = await fetch(clienteUrl, {method: "GET"});
 
-        const clientes = await resultados.json();
+        if(!resultado.ok){
+            throw new Error("Problemas con la peticion GET a la api...");
+        }
+
+        const clientes = await resultado.json();
 
         return clientes;
-    } catch (err) {
+    }catch(err){
         console.log(err);
     }
 }
 
-export const postCliente = async (newCliente) => {
-    try {
-        const response = await fetch(url, {
-            method: "POST",
-            body: JSON.stringify(newCliente),
-            header: {
-                "Content-type": "application/json"
-            }
-        })
-    } catch (err) {
-        console.log(err);
+export async function postCliente(cliente){
+    try{
+        await fetch(clienteUrl, 
+            {
+                method: "POST", 
+                body: JSON.stringify(cliente),
+                headers: {"Content-type": "application/json"}
+
+            });
+            
+        window.location.href= "index.html";
+
+    }catch(error){
+        console.log(error);
     }
 }
-
-
-/**
-export const postClienteXML = async (newCliente) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", url);
-    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-    const body = JSON.stringify(newCliente);
-    xhr.onload = () => {
-        if (xhr.readyState == 4 && xhr.status == 201) {
-            console.log(JSON.parse(xhr.responseText));
-        } else {
-            console.log(`Error: ${xhr.status}`);
-        }
-    };
-    xhr.send(body);
-} Con XML, tampooco funciona*/

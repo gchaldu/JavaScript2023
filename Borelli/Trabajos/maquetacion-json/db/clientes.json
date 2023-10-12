@@ -1,39 +1,31 @@
 {
   "clientes": [
     {
-      "id": 1,
       "nombre": "Juan Ignacio",
       "apellido": "Borelli",
-      "dni": "39107512",
-      "f_inicio": ""
+      "dni": 39107512,
+      "f_inicio": "11/10/2023",
+      "id": 1
     },
     {
-      "id": 2,
-      "nombre": "Matias Sebatían",
-      "apellido": "Borelli",
-      "dni": "39100000",
-      "f_inicio": ""
+      "nombre": "Roberto Carlos",
+      "apellido": "Gonzales",
+      "dni": 39102345,
+      "f_inicio": "11/10/2023",
+      "id": 2
     },
     {
-      "nombre": "Mariano",
+      "nombre": "Juan",
       "apellido": "Borelli",
-      "dni": "39100001",
-      "f_inicio": "",
+      "dni": "12345678",
+      "f_inicio": "2023-10-11",
       "id": 3
-    },
+    }
+  ],
+  "proveedores": [
     {
-      "nombre": "Lorena",
-      "apellido": "Mendez",
-      "dni": "22916489",
-      "f_inicio": "",
-      "id": 4
-    },
-    {
-      "nombre": "Fernanda",
-      "apellido": "Mendez",
-      "dni": "22916477",
-      "f_inicio": "",
-      "id": 5
+      "nombre": "Sancor",
+      "id": 1
     }
   ]
 }
