@@ -1,0 +1,38 @@
+<!-- <h1>Interpolacion en Angular</h1>
+
+<p>El titulo declarado en el archivo .ts es: </p>
+<h3>{{title}}</h3>
+
+<h1>Property binding</h1>
+<input type="text" [placeholder]="placeHolder">
+<input type="button" [value]="txtBtn">
+
+<h1>Event binding</h1>
+<input type="button" value="El que hace click es un boludo." (click)="soyUnaFuncion()">
+
+<form action="">
+
+</form>
+//Agregar form Module en lso mdoulos de acngular
+<input 
+    type="text" 
+    [(ngModel)]="valorEnviado">
+    
+<p>El valor enviado es: {{valorEnviado}}</p> -->
+<h1>{{titulo}}</h1>
+<h2>{{contador}}</h2>
+<input 
+    type="button"
+    [value]="txtBtn"
+    (click)="incrementar()"
+    >
+<input 
+    type="button"
+    value="Desincrementar"
+    (click)="desincrementar()"
+    >
+<input 
+    type="button"
+    value="Reiniciar"
+    (click)="reset()"
+    >

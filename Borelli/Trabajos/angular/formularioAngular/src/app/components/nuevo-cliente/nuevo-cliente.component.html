@@ -1,0 +1,54 @@
+<section id="form-container">
+    <form id="form-nuevo-editar-cliente" (ngSubmit)="guardarCliente()">
+        <fieldset>
+            <legend><h2>Crear Cliente</h2></legend>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input  type="text" 
+                        name="apellido" 
+                        id="apellido"
+                        [(ngModel)]="c.apellido"
+                        >
+            </div>
+
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input  type="text" 
+                        name="nombre" 
+                        id="nombre"
+                        [(ngModel)]="c.nombre"
+                        >
+            </div>
+
+            <div>
+                <label for="dni">DNI:</label>
+                <input  type="number" 
+                        name="dni" 
+                        id="dni"
+                        [(ngModel)]="c.dni"
+                        >
+            </div>
+
+            <div>
+                <label for="date">Fecha de Inicio:</label>
+                <input  type="date" 
+                        name="fechaInicio" 
+                        id="fechaInicio"
+                        [(ngModel)]="c.fechaInicio"
+                        >
+            </div>
+
+            <div>
+                <input  type="hidden" 
+                        id="id"
+                        name="id"
+                        [(ngModel)]="c.id"
+                        >
+            </div>
+
+            <div>
+                <input type="submit" value="Nuevo Cliente" id="submit-nuevo">
+            </div>
+        </fieldset>
+    </form>
+</section>

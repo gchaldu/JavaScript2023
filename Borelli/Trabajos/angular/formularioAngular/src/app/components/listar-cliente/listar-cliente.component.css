@@ -1,0 +1,35 @@
+.lista-clientes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabla-clientes{
+    width: 50%;
+    border: .1rem solid grey;
+    border-collapse: collapse;
+}
+
+.tabla-clientes th{
+    border: .1rem solid black;
+    color: white;
+    background-color: rgb(50, 49, 49);
+    padding: .5rem;
+    text-align: left;
+}
+
+.tabla-clientes td{
+    border: .1rem solid black;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+.tabla-clientes a{
+    text-decoration: none;
+    color: black;
+}
+
+.lista-clientes h2{
+    font-size: 3rem;
+}
