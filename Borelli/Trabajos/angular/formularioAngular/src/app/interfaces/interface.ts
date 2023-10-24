@@ -1,4 +1,4 @@
-export interface cliente{
+export interface Cliente{
     apellido:string,
     nombre:string,
     dni:number,

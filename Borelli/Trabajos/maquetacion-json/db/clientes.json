@@ -20,6 +20,13 @@
       "dni": "12345678",
       "f_inicio": "2023-10-11",
       "id": 3
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Borelli",
+      "dni": "30123456",
+      "f_inicio": "2023-10-11",
+      "id": 4
     }
   ],
   "proveedores": [

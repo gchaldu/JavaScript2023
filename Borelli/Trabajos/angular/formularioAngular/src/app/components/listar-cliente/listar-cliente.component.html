@@ -10,7 +10,14 @@
             </tr>
         </thead>
         <tbody id="clientes">
-            
+            <tr *ngFor="let cliente of listadoCliente">
+                <td>{{cliente.apellido}}</td>
+                <td>{{cliente.nombre}}</td>
+                <td>{{cliente.dni}}</td>
+                <td>{{cliente.fechaInicio}}</td>
+                <td><a class="btnEliminar" (click)="eliminarCliente(cliente.id)">Eliminar</a></td>
+                <td><a class="btnEditar" [routerLink]="['/editar-cliente/', cliente.id]">Editar</a></td>
+            </tr>
         </tbody>
     </table>
 </section>

@@ -1,0 +1,38 @@
+{
+  "clientes": [
+    {
+      "apellido": "Test",
+      "nombre": "Test2",
+      "dni": 15000000,
+      "fechaInicio": "2023-10-22",
+      "id": 0
+    },
+    {
+      "apellido": "Borelli",
+      "nombre": "Juan Ignacio",
+      "dni": 39170512,
+      "fechaInicio": "2023-10-22",
+      "id": 1
+    },
+    {
+      "apellido": "Borelli",
+      "nombre": "Matias Seastian",
+      "dni": 42309874,
+      "fechaInicio": "2023-10-22",
+      "id": 2
+    },
+    {
+      "apellido": "Mendez",
+      "nombre": "María Lorena",
+      "dni": 22916478,
+      "fechaInicio": "2023-10-22",
+      "id": 3
+    }
+  ],
+  "proveedores": [
+    {
+      "nombre": "Sancor",
+      "id": 0
+    }
+  ]
+}

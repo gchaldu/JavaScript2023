@@ -1,13 +1,12 @@
 {
-  "name": "formulario-angular",
+  "name": "practica",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "json-server": "json-server ./db/clientes.json -p 4000 --watch"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

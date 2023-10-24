@@ -19,3 +19,12 @@ body{
     margin: 0px;
     font-family: 'Raleway', sans-serif;
 }
+
+.error {
+    background-color: rgb(223, 77, 77);
+    color: black;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 5px;
+}

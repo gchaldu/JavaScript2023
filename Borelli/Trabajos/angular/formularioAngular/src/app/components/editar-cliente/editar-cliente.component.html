@@ -1,8 +1,8 @@
 <section id="form-container">
-    <form id="form-nuevo-editar-cliente" (ngSubmit)="guardarCliente()" [formGroup]="formularioVariable">
+    <form id="form-nuevo-editar-cliente" (ngSubmit)="editarCliente()" [formGroup]="formularioVariable">
         <fieldset>
             <legend>
-                <h2>Crear Cliente</h2>
+                <h2>Editar Cliente</h2>
             </legend>
             <div>
                 <label for="apellido">Apellido:</label>
@@ -48,7 +48,7 @@
             </div>
 
             <div>
-                <input type="submit" value="Nuevo Cliente" id="submit-nuevo">
+                <input type="submit" value="Editar Cliente" id="submit-edit">
             </div>
         </fieldset>
     </form>
