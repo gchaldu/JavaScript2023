@@ -27,4 +27,28 @@ export class UsuariosService {
       console.log(err);
     }
   }
+
+  async getUsuarios(): Promise<Usuario[] | undefined>{
+    try{
+      const resultado = await fetch(this.usersUrl, {
+        method:"GET"
+      })
+      const datos = await resultado.json();
+      return datos;
+
+    }catch(err){
+      console.log(err);
+    }
+
+    return undefined;
+  }
+
+  async deleteUsuario(id:number){
+    try{
+      
+    }catch(err){
+      console.log(err);
+    }
+  }
+  
 }

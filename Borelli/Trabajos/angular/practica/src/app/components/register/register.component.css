@@ -1,1 +1,7 @@
 @import url("../login-form/login-form.component.css");
+
+.error{
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+}

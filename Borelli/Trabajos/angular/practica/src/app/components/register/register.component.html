@@ -5,11 +5,23 @@
             <div class="campo">
                 <label for="userName">Usuario:</label>
                 <input type="text" name="userName" id="userName" placeholder="Nombre de usuario..." formControlName="userName">
+                <span class="error" *ngIf="form.controls['userName'].getError('required') && form.touched">
+                    Error!!! campo requerido       
+                </span>
+                <span class="error" *ngIf="form.controls['userName'].getError('minlength') && form.touched">
+                    Error!!! minimo de 3 caracteres      
+                </span>
             </div>
 
             <div class="campo">
                 <label for="password">Password:</label>
                 <input type="password" name="pw" id="pw" placeholder="Ingrese password..." formControlName="pw">
+                <span class="error" *ngIf="form.controls['pw'].getError('required') && form.touched">
+                    Error!!! campo requerido       
+                </span>
+                <span class="error" *ngIf="form.controls['pw'].getError('minlength') && form.touched">
+                    Error!!! minimo de 3 caracteres      
+                </span>
             </div>
 
             <div class="campo">
