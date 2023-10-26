@@ -1,0 +1,23 @@
+.form-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.form{
+    width: 35%;
+    height: 8rem;
+}
+
+.form h2{
+    font-size: 20px;
+}
+
+.campo{
+    padding: 10px;
+}
+
+.campo input{
+    margin-left: 5px;
+}

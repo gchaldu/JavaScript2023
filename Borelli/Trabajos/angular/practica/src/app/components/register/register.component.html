@@ -1,1 +1,20 @@
-<p>register works!</p>
+<section  class="form-container">
+    <form class="form" [formGroup]="form" (ngSubmit)="registrarUsuario()">
+        <fieldset>
+            <legend><h2>User Register</h2></legend>
+            <div class="campo">
+                <label for="userName">Usuario:</label>
+                <input type="text" name="userName" id="userName" placeholder="Nombre de usuario..." formControlName="userName">
+            </div>
+
+            <div class="campo">
+                <label for="password">Password:</label>
+                <input type="password" name="pw" id="pw" placeholder="Ingrese password..." formControlName="pw">
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Registrarse" id="submit-register">
+            </div>
+        </fieldset>
+    </form>
+</section>

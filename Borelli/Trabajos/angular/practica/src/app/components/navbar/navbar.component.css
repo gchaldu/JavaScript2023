@@ -1,0 +1,23 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 137, 29);
+    height: 3rem;
+}
+
+#titulo{
+    margin-left: 5px;
+}
+
+.navbar-container div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-container div a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
